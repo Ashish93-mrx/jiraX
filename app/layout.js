@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
       }}
     >
       <html lang="en" className="">
-        <body className={`${inter.className} dotted-background`}>
+        <body className={`${inter.className} futuristic-background`}>
           <ThemeProvider attribute="class" defaultTheme="dark">
             <Header />
             <main className="min-h-screen">{children}</main>

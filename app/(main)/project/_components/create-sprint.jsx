@@ -69,7 +69,9 @@ export default function SprintCreationForm({
   return (
     <>
       <div className="flex justify-between">
-        <h1 className="text-5xl font-bold mb-8 gradient-title">
+        {/* <h1 className="text-5xl font-bold mb-8 gradient-title">
+        </h1> */}
+        <h1 className="text-4xl sm:text-5xl font-semibold text-balance text-neutral-900 dark:text-white tracking-tight animate-in fade-in slide-in-from-bottom-2 duration-500 pb-2">
           {projectTitle}
         </h1>
         <Button

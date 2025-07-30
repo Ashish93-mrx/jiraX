@@ -6,11 +6,18 @@
 @tailwind utilities;
 *
 
-.dotted-background {
-  background-color: #0a111f;
-  background-image: radial-gradient(#4a5568 1px, transparent 1px);
-  background-size: 30px 30px;
+.futuristic-background {
+  background-color: #0a111f; /* Your solid dark base */
+
+  background-image:
+    linear-gradient(90deg, rgba(88, 199, 250, 0.05) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(88, 199, 250, 0.05) 1px, transparent 1px);
+
+  background-size: 40px 40px; /* Size of each box */
+  background-repeat: repeat;
+  background-position: center;
 }
+
 
 
 
