@@ -65,15 +65,19 @@ useEffect(() => {
   }
 
   if (!isAdmin) {
-    return (
-      <div className="flex flex-col gap-2 items-center">
-        <span className="text-2xl gradient-title">
-          Oops! Only Admins can create projects.
-        </span>
-        <OrgSwitcher />
-      </div>
-    );
-  }
+  return (<div className="flex flex-col items-center justify-center px-4 py-10 max-w-md mx-auto text-center">
+    <h1 className="text-3xl font-bold text-balance bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-500">
+      Oops! Only Admins can create projects.
+    </h1>
+    <p className="mt-4 text-sm text-muted-foreground">
+      Switch to an organization where you have admin rights to continue.
+    </p>
+    <div className="mt-6">
+      <OrgSwitcher />
+    </div>
+  </div>)
+}
+
 
   return (
     <div className="container mx-auto py-10">

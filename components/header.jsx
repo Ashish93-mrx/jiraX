@@ -15,11 +15,11 @@ const Header = async () => {
         <Link href="/">
           <h1 className="text-2xl font-bold">
             <Image
-              src={"/logo2.png"}
+              src="/companies/logo.png"
               alt="Zscrum Logo"
-              width={200}
-              height={56}
-              className="h-10 w-auto object-contain"
+              width={600}
+              height={156}
+              className="h-28 w-auto object-contain"
             />
           </h1>
         </Link>

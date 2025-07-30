@@ -38,13 +38,14 @@ export default async function ProjectList({ orgId }) {
             </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-sm text-gray-500 mb-4">{project.description}</p>
+              <p className="text-sm text-gray-300 mb-4">{project.description}</p>
               <Link
-                href={`/project/${project.id}`}
-                className="text-blue-500 hover:underline"
-              >
-                View Project
-              </Link>
+  href={`/project/${project.id}`}
+  className="inline-block px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-2xl shadow-sm hover:bg-blue-800 transition-colors duration-200"
+>
+  View Project
+</Link>
+
             </CardContent>
           </Card>
         );
