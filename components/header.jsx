@@ -8,7 +8,7 @@ import { checkUser } from '@/lib/checkUser'
 import UserLoading from './user-loading'
 
 const Header = async () => {
-// await checkUser();
+await checkUser();
   return (
       <header className="container mx-auto">
       <nav className="py-6 px-4 flex justify-between items-center">
