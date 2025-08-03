@@ -98,6 +98,14 @@ export async function deleteIssue(issueId) {
     throw new Error("unauthorized");
   }
 
+  const user = await db.user.findUnique({
+        where: { clerkUserId: userId },
+    });
+
+    if (!user) {
+        throw new Error("User not found");
+    }
+
   const issue = await db.issue.findUnique({
     where: { id: issueId },
     include: { project: true },
