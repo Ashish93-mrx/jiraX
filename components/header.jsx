@@ -15,7 +15,7 @@ await checkUser();
         <Link href="/">
           <h1 className="text-2xl font-bold">
             <Image
-              src="/companies/scrumx24ab.png"
+              src="/companies/scrumx24(sm).png"
               alt="scrumX24 Logo"
               width={600}
               height={156}

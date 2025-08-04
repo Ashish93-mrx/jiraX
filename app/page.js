@@ -10,28 +10,28 @@ import CompanyCarousel from "@/components/company-carousel";
 
 const faqs = [
   {
-    question: "What is JiraX?",
-    answer: "JiraX is a powerful project management tool designed to help teams organize, track, and manage their work efficiently. It combines intuitive design with robust features to streamline your workflow and boost productivity.",
+    question: "What is ScrumX24?",
+    answer: "ScrumX24 is a powerful project management tool designed to help teams organize, track, and manage their work efficiently. It combines intuitive design with robust features to streamline your workflow and boost productivity.",
   },
   {
-    question: "How does JiraX compare to other project management tools?",
-    answer: "JiraX offers a unique combination of intuitive design, powerful features, and flexibility. Unlike other tools, we focus on providing a seamless experience for both agile and traditional project management methodologies, making it versatile for various team structures and project types.",
+    question: "How does ScrumX24 compare to other project management tools?",
+    answer: "ScrumX24 offers a unique combination of intuitive design, powerful features, and flexibility. Unlike other tools, we focus on providing a seamless experience for both agile and traditional project management methodologies, making it versatile for various team structures and project types.",
   },
   {
-    question: "Is JiraX suitable for small teams?",
-    answer: "Absolutely! JiraX is designed to be scalable and flexible. It works great for small teams and can easily grow with your organization as it expands. Our user-friendly interface ensures that teams of any size can quickly adapt and start benefiting from JiraX's features.",
+    question: "Is ScrumX24 suitable for small teams?",
+    answer: "Absolutely! ScrumX24 is designed to be scalable and flexible. It works great for small teams and can easily grow with your organization as it expands. Our user-friendly interface ensures that teams of any size can quickly adapt and start benefiting from ScrumX24's features.",
   },
   {
-    question: "What key features does JiraX offer?",
-    answer: "JiraX provides a range of powerful features including intuitive Kanban boards for visualizing workflow, robust sprint planning tools for agile teams, comprehensive reporting for data-driven decisions, customizable workflows, time tracking, and team collaboration tools. These features work seamlessly together to enhance your project management experience.",
+    question: "What key features does ScrumX24 offer?",
+    answer: "ScrumX24 provides a range of powerful features including intuitive Kanban boards for visualizing workflow, robust sprint planning tools for agile teams, comprehensive reporting for data-driven decisions, customizable workflows, time tracking, and team collaboration tools. These features work seamlessly together to enhance your project management experience.",
   },
   {
-    question: "Can JiraX handle multiple projects simultaneously?",
-    answer: "Yes, JiraX is built to manage multiple projects concurrently. You can easily switch between projects, and get a bird's-eye view of all your ongoing work. This makes JiraX ideal for organizations juggling multiple projects or clients.",
+    question: "Can ScrumX24 handle multiple projects simultaneously?",
+    answer: "Yes, ScrumX24 is built to manage multiple projects concurrently. You can easily switch between projects, and get a bird's-eye view of all your ongoing work. This makes ScrumX24 ideal for organizations juggling multiple projects or clients.",
   },
   {
     question: "Is there a learning curve for new users?",
-    answer: "While JiraX is packed with features, we've designed it with user-friendliness in mind. New users can quickly get up to speed thanks to our intuitive interface, helpful onboarding process, and comprehensive documentation.",
+    answer: "While ScrumX24 is packed with features, we've designed it with user-friendliness in mind. New users can quickly get up to speed thanks to our intuitive interface, helpful onboarding process, and comprehensive documentation.",
   },
 ];
 
@@ -67,8 +67,8 @@ export default function Page() {
               <span className="flex flex-wrap justify-center gap-3 sm:gap-4 items-center text-purple-300 mt-4">
                 Powered by
                 <Image
-                  src="/companies/logo2.png"
-                  alt="Logo"
+                  src="/companies/scrumx.png"
+                  alt="scrumx24"
                   width={400}
                   height={80}
                   className="h-12 sm:h-16 md:h-20 w-auto object-contain"
@@ -141,7 +141,7 @@ export default function Page() {
               Ready to Elevate Your Team?
             </h3>
             <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-              Join thousands of modern teams using JiraX to simplify planning, track progress, and deliver faster.
+              Join thousands of modern teams using ScrumX24 to simplify planning, track progress, and deliver faster.
             </p>
             <Link href="/onboarding">
               <Button size="lg">
