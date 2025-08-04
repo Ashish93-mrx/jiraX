@@ -15,11 +15,11 @@ await checkUser();
         <Link href="/">
           <h1 className="text-2xl font-bold">
             <Image
-              src="/companies/logo.png"
-              alt="Zscrum Logo"
+              src="/companies/scrumx24ab.png"
+              alt="scrumX24 Logo"
               width={600}
               height={156}
-              className="h-28 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           </h1>
         </Link>

@@ -57,21 +57,26 @@ export default function Page() {
   return (
     <div className="min-h-screen">
       <div>
-        <section className="container mx-auto py-20 text-center px-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-cyan-200 pb-6 flex flex-col items-center">
-            <span>Build with Precision.</span>
-            <span className="flex flex-wrap justify-center gap-3 sm:gap-4 items-center text-purple-300 mt-4">
-              Powered by
-              <Image
-                src="/companies/logo2.png"
-                alt="Logo"
-                width={400}
-                height={80}
-                className="h-12 sm:h-16 md:h-20 w-auto object-contain"
-              />
-            </span>
-          </h1>
-          <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-10 max-w-3xl mx-auto">
+        <section className="container mx-auto py-20 text-center px-4 pb-10">
+          <div className="relative flex justify-center items-center text-center">
+            <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
+              <div className="w-[600px] h-[600px] rounded-full bg-purple-500 opacity-20 blur-[120px]"></div>
+            </div>
+            <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-cyan-200 pb-6 flex flex-col items-center">
+              <span>Build with Precision</span>
+              <span className="flex flex-wrap justify-center gap-3 sm:gap-4 items-center text-purple-300 mt-4">
+                Powered by
+                <Image
+                  src="/companies/logo2.png"
+                  alt="Logo"
+                  width={400}
+                  height={80}
+                  className="h-12 sm:h-16 md:h-20 w-auto object-contain"
+                />
+              </span>
+            </h1>
+          </div>
+          <p className="text-base sm:text-lg md:text-xl text-gray-200 mb-10 max-w-3xl mx-auto">
             Modern project infrastructure, designed for teams that ship fast and think ahead.
           </p>
           <Link href='/onboarding'>
@@ -86,7 +91,7 @@ export default function Page() {
           </Link>
         </section>
 
-        <section id="features" className="bg-gray-900 py-20 px-5">
+        <section id="features" className="bg-gray-900 py-20 px-5 mt-36">
           <div className="container mx-auto">
             <h3 className="text-3xl font-bold mb-12 text-center text-white">Key Features</h3>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
