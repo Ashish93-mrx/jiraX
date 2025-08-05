@@ -47,11 +47,11 @@ export default function IssueCard({
  return (
         <>
             <Card
-                className="cursor-pointer hover:shadow-md transition-shadow"
+                className={`${priorityColor[issue.priority]} cursor-pointer hover:shadow-md transition-shadow`}
                 onClick={() => setIsDialogOpen(true)}
             >
                 <CardHeader
-                    className={`border-t-2 ${priorityColor[issue.priority]} rounded-lg`}
+                    
                 >
                     <CardTitle className="py-2">{issue.title}</CardTitle>
                 </CardHeader>

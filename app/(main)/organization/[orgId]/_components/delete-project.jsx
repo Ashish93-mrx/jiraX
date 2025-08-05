@@ -45,7 +45,7 @@ const DeleteProject = ({projectId}) => {
     <>
       <Button variant="ghost" onClick={handleDelete} disabled={isDeleting}
       size="sm"
-      className={`${isDeleting ? "animate-pulse" : ""}`}
+      className={`${isDeleting ? "animate-pulse" : ""}  cursor-pointer`}
       >
         <Trash2 className='h-4 w-4'/>
       </Button>
