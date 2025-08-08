@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CompanyCarousel from "@/components/company-carousel";
+import DemoCredentialModal from "@/components/Dummy-cred";
 
 const faqs = [
   {
@@ -59,8 +60,8 @@ export default function Page() {
       <div>
         <section className="container mx-auto py-20 text-center px-4 pb-10">
           <div className="relative flex justify-center items-center text-center">
-            <div className="absolute inset-0 flex justify-center items-center pointer-events-none z-0">
-              <div className="w-[600px] h-[600px] rounded-full bg-purple-500 opacity-20 blur-[120px]"></div>
+            <div className="absolute inset-0 flex justify-center items-center pointer-events-none -z-20">
+              <div className="w-[600px] h-[600px] rounded-full bg-purple-600 opacity-20 blur-[120px]"></div>
             </div>
             <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-cyan-200 pb-6 flex flex-col items-center">
               <span>Build with Precision</span>
@@ -80,12 +81,12 @@ export default function Page() {
             Modern project infrastructure, designed for teams that ship fast and think ahead.
           </p>
           <Link href='/onboarding'>
-            <Button size="lg" className="mr-2">
+            <Button size="lg" className="mr-2 cursor-pointer">
               Get started <ChevronRight size={18} />
             </Button>
           </Link>
           <Link href='#features'>
-            <Button size="lg" variant="outline" className="mr-4">
+            <Button size="lg" variant="outline" className="mr-2 cursor-pointer">
               Learn More
             </Button>
           </Link>
@@ -148,6 +149,9 @@ export default function Page() {
                 Start For Free <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
+            {/* <span className="m-2 h-1"> */}
+                <DemoCredentialModal/>
+            {/* </span> */}
           </div>
         </section>
       </div>

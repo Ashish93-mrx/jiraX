@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/nextjs'
-import Link  from 'next/link' // ⚠️ Lucide's Link is an icon, not a router
+import Link  from 'next/link' // Lucide's Link is an icon, not a router
 import { Button } from './ui/button'
 import { PenBox } from 'lucide-react'
 import UserMenu from './user-menu'
@@ -24,6 +24,7 @@ await checkUser();
           </h1>
         </Link>
         <div className="flex items-center gap-4">
+        {/* {(SignedIn) ? '' : <DemoCredentialModal/>} */}
           <Link href="/project/create">
             <Button variant="destructive" className="flex items-center gap-2">
               <PenBox size={18} />
@@ -32,7 +33,7 @@ await checkUser();
           </Link>
           <SignedOut>
             <SignInButton forceRedirectUrl="/onboarding">
-              <Button variant="outline">Login</Button>
+              <Button variant="outline" className="cursor-pointer">Login</Button>
             </SignInButton>
           </SignedOut>
           <SignedIn>
